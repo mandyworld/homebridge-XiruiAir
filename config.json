@@ -1,0 +1,142 @@
+{
+    "bridge": {
+        "name": "Homebridge A678",
+        "username": "0E:88:53:DA:A6:78",
+        "port": 51065,
+        "pin": "729-97-227",
+        "advertiser": "avahi"
+    },
+    "accessories": [
+        {
+            "accessory": "AirVisual",
+            "name": "AirVisual",
+            "api_key": "320a9e16-d8ef-41c4-8001-c26ec536de0d",
+            "sensor": "air_quality",
+            "aqi_standard": "us",
+            "latitude": 39.9,
+            "longitude": 116.22,
+            "city": "Beijing",
+            "state": "Beijing",
+            "country": "China",
+            "ppb_units": [
+                "no2",
+                "o3",
+                "so2"
+            ],
+            "interval": 30
+        },
+        {
+            "accessory": "XiruiAir",
+            "name": "XiruiAir",
+            "interval": 30
+        }
+    ],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8581,
+            "platform": "config",
+            "lang": "zh-CN"
+        },
+        {
+            "devices": [
+                {
+                    "name": "空气净化器",
+                    "ip": "192.168.8.192",
+                    "token": "b38cf8e967c72b6c277adb87b2401a71",
+                    "deviceId": "107379425",
+                    "model": "zhimi.airpurifier.ma4",
+                    "pollingInterval": 10,
+                    "deepDebugLog": false,
+                    "silentLog": false,
+                    "deviceEnabled": true,
+                    "micloud": {
+                        "username": "13811206876",
+                        "password": "jiajia@325",
+                        "country": "cn",
+                        "timeout": 6000
+                    },
+                    "buzzerControl": false,
+                    "ledControl": false,
+                    "childLockControl": false,
+                    "modeControl": true
+                },
+                {
+                    "name": "客厅净化器",
+                    "ip": "192.168.8.68",
+                    "token": "57c17b9d7b6ddbcd3301e8c44b8366e6",
+                    "deviceId": "241248422",
+                    "model": "airdog.airpurifier.x5",
+                    "pollingInterval": 10,
+                    "deepDebugLog": false,
+                    "silentLog": false,
+                    "deviceEnabled": true,
+                    "micloud": {
+                        "username": "13811206876",
+                        "password": "jiajia@325",
+                        "country": "cn",
+                        "forceMiCloud": true,
+                        "timeout": 6000
+                    },
+                    "customAccessory": false,
+                    "onlyMainService": false,
+                    "buzzerControl": false,
+                    "ledControl": false,
+                    "childLockControl": false,
+                    "modeControl": true
+                },
+                {
+                    "name": "水浸传感器",
+                    "ip": "192.168.8.169",
+                    "token": "79645664744b69575139743557645443",
+                    "deviceId": "blt.3.1jm2mfa2sk400",
+                    "model": "linp.flood.rs1bb",
+                    "pollingInterval": 10,
+                    "deepDebugLog": false,
+                    "silentLog": false,
+                    "deviceEnabled": true,
+                    "micloud": {
+                        "username": "13811206876",
+                        "password": "jiajia@325",
+                        "forceMiCloud": true,
+                        "timeout": 6000
+                    },
+                    "buzzerControl": false,
+                    "ledControl": false,
+                    "childLockControl": false,
+                    "modeControl": false
+                }
+            ],
+            "platform": "miot"
+        },
+        {
+            "devices": [
+                {
+                    "type": "Air Conditioner",
+                    "name": "客厅空调",
+                    "id": 8796093142907,
+                    "advanced_options": {
+                        "ip": "192.168.8.190"
+                    }
+                },
+                {
+                    "type": "Air Conditioner",
+                    "name": "主卧空调",
+                    "id": 7696581515736,
+                    "advanced_options": {
+                        "ip": "192.168.8.55"
+                    }
+                }
+            ],
+            "platform": "midea-platform"
+        },
+        {
+            "name": "eWeLink",
+            "username": "+8613811206876",
+            "password": "Hong@4un2",
+            "mode": "auto",
+            "language": "en",
+            "platform": "eWeLink"
+        }
+    ]
+}
