@@ -7,7 +7,7 @@ const HEADERS = {
   'accept-language': 'zh-cn'
 };
 const DATA = JSON.stringify({
-  serialNo: '19032970024938057162'
+  serialNo: 'put your device serialNo here'
 });
 
 function loaddata() {
