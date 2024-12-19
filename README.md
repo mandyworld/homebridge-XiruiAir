@@ -8,10 +8,11 @@
  3、修改data_fetcher.js中的serialNo为你自己的设备编号，设备编号在智享西家APP的设备管理页面查看，请输入检测底座的序列号；
 
  4、在homebridge的config.json的accessories中增加一下配置项：
+ ~~~
          {
             "accessory": "XiruiAir",
             "name": "XiruiAir",
             "interval": 30
         }
-
+~~~
 5、重启homebridge服务即可看到XiruiAir相关的配件了。
